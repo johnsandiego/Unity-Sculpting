@@ -9,7 +9,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}</ProjectGuid>
+    <ProjectGuid>{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Cube.cs" />
      <Compile Include="Assets\CubeSphere.cs" />
      <Compile Include="Assets\Grid.cs" />
      <Compile Include="Assets\MeshDeformer.cs" />
@@ -83,7 +84,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{FF54D5F5-A930-369B-2724-496005846F32}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{D95E2169-F3D9-61B8-B537-B54F3099E88F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
