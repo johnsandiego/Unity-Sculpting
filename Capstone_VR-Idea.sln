@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone_VR-Idea", "Assembly-CSharp-firstpass.csproj", "{FF54D5F5-A930-369B-2724-496005846F32}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone_VR-Idea", "Assembly-CSharp.csproj", "{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Capstone_VR-Idea", "Assembly-CSharp-firstpass.csproj", "{FF54D5F5-A930-369B-2724-496005846F32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,14 +11,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FF54D5F5-A930-369B-2724-496005846F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FF54D5F5-A930-369B-2724-496005846F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FF54D5F5-A930-369B-2724-496005846F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FF54D5F5-A930-369B-2724-496005846F32}.Release|Any CPU.Build.0 = Release|Any CPU
 		{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF1DCD1E-EFBA-BDD7-0D24-298E5007CC45}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF54D5F5-A930-369B-2724-496005846F32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF54D5F5-A930-369B-2724-496005846F32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF54D5F5-A930-369B-2724-496005846F32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF54D5F5-A930-369B-2724-496005846F32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

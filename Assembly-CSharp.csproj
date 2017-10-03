@@ -52,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\CubeSphere.cs" />
+     <Compile Include="Assets\Grid.cs" />
      <Compile Include="Assets\MeshDeformer.cs" />
      <Compile Include="Assets\MeshDeformerInput.cs" />
      <Compile Include="Assets\RoundedCube.cs" />
