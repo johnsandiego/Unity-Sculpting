@@ -111,18 +111,36 @@ public class Cube_John: MonoBehaviour {
         }
 
     }
-
+    //creates the top face
     private int CreateTopFace(int[] triangles, int t, int ring)
     {
-        int v = ring * ySize;
+        
+        int v = ring * ySize;   //no of rings that goes fully around the cube times the height
         for(int x = 0; x < xSize - 1; x++, v++)
         {
             t = SetQuad(triangles, t, v, v + 1, v + ring - 1, v + ring);
         }
         int vMin = ring * (ySize + 1) -1;
         int vMid = vMin + 1;
-        t = SetQuad(triangles, t, vMin, vMid, vMin - 1, vMid + xSize - 1);
+        int vMax = v + 2;
+        for (int z = 1; z < zSize - 1; z++, vMin--, vMid++, vMax++)
+        {
+            t = SetQuad(triangles, t, vMin, vMid, vMin - 1, vMid + xSize - 1);
+            for (int x = 1; x < xSize - 1; x++, vMid++)
+            {
+                t = SetQuad(triangles, t, vMid, vMid + 1, vMid + xSize - 1, vMid + xSize);
+            }
+            t = SetQuad(triangles, t, vMid, vMax, vMid + xSize - 1, vMid + 1);
+        }
+        int vTop = vMin - 2;
+        t = SetQuad(triangles, t, vMin, vMid, vMin - 1, vMin - 2);
+        for (int x = 1; x < xSize - 1; x++, vTop--, vMid++)
+        {
+            t = SetQuad(triangles, t, vMid, vMid + 1, vTop, vTop - 1);
+        }
+        t = SetQuad(triangles, t, vMid, vTop - 2, vTop, vTop - 1);
         return t;
+        
     }
 
     //creates a quad of the triangle face
