@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/CubeScene.unity
+- path: Assets/Scenes/Sculpt vertices.unity
   isLoaded: 1
   isActive: 1
