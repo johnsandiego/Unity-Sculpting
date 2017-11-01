@@ -7,13 +7,13 @@ using UnityEditor;
 public class PaintMeshDeformer : MonoBehaviour {
 
 	public float radius = 1.0f;
-	public float pull = 10.0;
+	public float pull = 10.0f;
 	public Vector3 sqrMagnitude;
 	public float distance;
 	//public float fallOff;
 
 
-	enum FallOff{
+	public enum FallOff{
 		Gauss, 
 		Linear, 
 		Needle
@@ -33,7 +33,7 @@ public class PaintMeshDeformer : MonoBehaviour {
 
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
-		if(Physics.Raycast(ray, out hit){
+		if(Physics.Raycast(ray, out hit)){
 			MeshFilter filter = hit.collider.GetComponent<MeshFilter>();
 			if(filter){
 				if(filter != unappliedMesh){
@@ -50,40 +50,40 @@ public class PaintMeshDeformer : MonoBehaviour {
 	}
 
 	public float LinearFallOff(float dis, float inRadius){
-		return Mathf.Clamp01 (1.0 - dis / inRadius);
+		return Mathf.Clamp01 (1.0f - dis / inRadius);
 	}
 
 	public float GaussFallOff(float diss, float inRadius){
 
-		return Mathf.Clamp01(Mathf.Pow(360.0, -Mathf.Pow(diss/inRadius,2.5)-0.01));
+		return Mathf.Clamp01(Mathf.Pow(360.0f, -Mathf.Pow(diss/inRadius,2.5f)-0.01f));
 	}
 
 	public float NeedleFalloff(float dist, float inRadius){
 
-		return -(dist*dist)/(inRadius*inRadius)+1.0;
+		return -(dist*dist)/(inRadius*inRadius)+1.0f;
 	}
 
-	public float DeformMesh(Mesh mesh, Vector3 position, float power, float inRadius){
-		Mesh vertices = mesh.vertices;
-		Mesh normals = mesh.normals;
+	public void DeformMesh(Mesh mesh, Vector3 position, float power, float inRadius){
+		Vector3[] vertices = mesh.vertices;
+		Vector3[] normals = mesh.normals;
 		float sqrRadius = inRadius * inRadius;
 
 		Vector3 averageNormal = Vector3.zero;
-		for (int i = 0; i < vertices.vertexCount; i++) {
-			sqrMagnitude = (vertices [i] - position).sqrMagnitude;
+		for (int i = 0; i < vertices.Length; i++) {
+			float sqrMagnitude = (vertices[i] - position).sqrMagnitude;
 
 			if (sqrMagnitude > sqrRadius)
 				continue;
 
 			distance = Mathf.Sqrt (sqrMagnitude);
-			fallOff = LinearFallOff (distance, inRadius);
+			float fallOff = LinearFallOff (distance, inRadius);
 			averageNormal += fallOff * normals [i];
 
 		}
 		averageNormal = averageNormal.normalized;
 
-		for (int j = 0; j < vertices.vertexCount; j++) {
-			sqrMagnitude = (vertices [j] - position).sqrMagnitude;
+		for (int j = 0; j < vertices.Length; j++) {
+			float sqrMagnitude = (vertices [j] - position).sqrMagnitude;
 
 			if (sqrMagnitude > sqrRadius)
 				continue;
@@ -93,7 +93,7 @@ public class PaintMeshDeformer : MonoBehaviour {
 			switch (fallOff) {
 				
 			case FallOff.Gauss:
-				fallOff = GaussFallOff (distance, inRadius);
+				float fallOff = GaussFallOff (distance, inRadius);
 				break;
 			case FallOff.Needle:
 				fallOff = NeedleFalloff (distance, inRadius);
@@ -103,7 +103,7 @@ public class PaintMeshDeformer : MonoBehaviour {
 				break;
 			
 			}
-			vertices [j] += averageNormal * fallOff * power;
+			vertices [j] += averageNormal * (float)fallOff * power;
 
 		}
 		mesh.vertices = vertices;
