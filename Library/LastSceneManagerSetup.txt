@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Sculpt vertices.unity
+- path: Assets/Scenes/Scene.unity
   isLoaded: 1
   isActive: 1

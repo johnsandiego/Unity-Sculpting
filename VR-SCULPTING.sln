@@ -1,9 +1,9 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2017
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING", "VR-SCULPTING.csproj", "{8A50188F-6261-EE92-D6C4-67504C92695C}"
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING", "Assembly-CSharp.csproj", "{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING.Plugins", "VR-SCULPTING.Plugins.csproj", "{D8BAE211-9683-2FEA-E499-AD4BCC262FCA}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING", "Assembly-CSharp-firstpass.csproj", "{D95E2169-F3D9-61B8-B537-B54F3099E88F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,16 +11,19 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{8A50188F-6261-EE92-D6C4-67504C92695C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{8A50188F-6261-EE92-D6C4-67504C92695C}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{8A50188F-6261-EE92-D6C4-67504C92695C}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{8A50188F-6261-EE92-D6C4-67504C92695C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D8BAE211-9683-2FEA-E499-AD4BCC262FCA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D8BAE211-9683-2FEA-E499-AD4BCC262FCA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D8BAE211-9683-2FEA-E499-AD4BCC262FCA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D8BAE211-9683-2FEA-E499-AD4BCC262FCA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
 	EndGlobalSection
 EndGlobal

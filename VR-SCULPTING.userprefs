@@ -1,8 +1,12 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Cube.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\PaintMeshDeformer.cs">
     <Files>
-      <File FileName="Assets\Cube.cs" Line="41" Column="3" />
+      <File FileName="Assets\Sources\PaintVertices.js" Line="108" Column="19" />
+      <File FileName="Assets\Script\Grid.cs" Line="1" Column="1" NotebookId="1" />
+      <File FileName="Assets\Sources\ExtrudedMeshTrail.js" Line="77" Column="62" NotebookId="1" />
+      <File FileName="Assets\Script\MeshDeformer.cs" Line="36" Column="29" NotebookId="1" />
+      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="113" Column="3" NotebookId="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
