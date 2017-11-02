@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-[RequireComponent(typeof(MeshFilter))]
+
 public class PaintMeshDeformer : MonoBehaviour {
 
 	public float radius = 1.0f;
@@ -21,16 +21,17 @@ public class PaintMeshDeformer : MonoBehaviour {
 
 	private MeshFilter unappliedMesh;
 
-	public FallOff fallOff = FallOff.Gauss;
-	
-	// Update is called once per frame
-	void Update () {
+    public FallOff fallOff = FallOff.Gauss;
+    float _fallOff = 0.0f;
+
+    // Update is called once per frame
+    void Update () {
 		if (!Input.GetMouseButton (0)) {
 			//ApplyMeshCollider ();
 			return;
 
 		}
-
+        //Debug.Log(fallOff);
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		if(Physics.Raycast(ray, out hit)){
@@ -71,7 +72,7 @@ public class PaintMeshDeformer : MonoBehaviour {
 		Vector3 averageNormal = Vector3.zero;
 		for (int i = 0; i < vertices.Length; i++) {
 			float sqrMagnitude = (vertices[i] - position).sqrMagnitude;
-
+            //Debug.Log(sqrMagnitude);
 			if (sqrMagnitude > sqrRadius)
 				continue;
 
@@ -93,17 +94,17 @@ public class PaintMeshDeformer : MonoBehaviour {
 			switch (fallOff) {
 				
 			case FallOff.Gauss:
-				float fallOff = GaussFallOff (distance, inRadius);
+				_fallOff = GaussFallOff (distance, inRadius);
 				break;
 			case FallOff.Needle:
-				fallOff = NeedleFalloff (distance, inRadius);
+				_fallOff = NeedleFalloff (distance, inRadius);
 				break;
 			default:
-				fallOff = LinearFallOff (distance, inRadius);
+				_fallOff = LinearFallOff (distance, inRadius);
 				break;
 			
 			}
-			vertices [j] += averageNormal * (float)fallOff * power;
+			vertices [j] += averageNormal * _fallOff * power;
 
 		}
 		mesh.vertices = vertices;

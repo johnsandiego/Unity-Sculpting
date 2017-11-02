@@ -89,7 +89,9 @@
     <Compile Include="Assets\Script\Grid.cs" />
     <Compile Include="Assets\Script\MeshDeformer.cs" />
     <Compile Include="Assets\Script\MeshDeformerInput.cs" />
+    <Compile Include="Assets\Script\Noise.cs" />
     <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
+    <Compile Include="Assets\Script\RemoveMeshDeformer.cs" />
     <Compile Include="Assets\Script\RoundedCube.cs" />
   </ItemGroup>
   <ItemGroup>

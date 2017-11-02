@@ -918,16 +918,8 @@ MonoBehaviour:
   time: 0.5
   alwaysUp: 0
   minDistance: 0.3
-  startColor:
-    r: 0.99607843
-    g: 1
-    b: 0.9882353
-    a: 1
-  endColor:
-    r: 1
-    g: 1
-    b: 1
-    a: 1
+  startColor: {r: 0.99607843, g: 1, b: 0.9882353, a: 1}
+  endColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!33 &53
 MeshFilter:
   m_ObjectHideFlags: 0

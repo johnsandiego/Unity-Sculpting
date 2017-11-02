@@ -337,9 +337,8 @@ GameObject:
   - component: {fileID: 53}
   - component: {fileID: 51}
   - component: {fileID: 49}
-  - component: {fileID: 47}
-  - component: {fileID: 45}
   - component: {fileID: 48}
+  - component: {fileID: 45}
   - component: {fileID: 46}
   m_Layer: 0
   m_Name: Main Camera
@@ -368,7 +367,14 @@ MonoBehaviour:
   ySpeed: 120
   yMinLimit: -360
   yMaxLimit: 360
---- !u!114 &46
+--- !u!33 &46
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 44}
+  m_Mesh: {fileID: 0}
+--- !u!114 &48
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -379,32 +385,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da8a5c73ec204414b9bdfd0a7954f1b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  radius: 1
-  pull: 10
+  radius: 0.3
+  pull: -2.11
   sqrMagnitude: {x: 0, y: 0, z: 0}
   distance: 0
   fallOff: 0
---- !u!114 &47
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 748a1f3cbd11cc00d0001b588d76c639, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  radius: 0.3
-  pull: 2
-  fallOff: 0
---- !u!33 &48
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 44}
-  m_Mesh: {fileID: 0}
 --- !u!81 &49
 AudioListener:
   m_ObjectHideFlags: 0
