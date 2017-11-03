@@ -114,11 +114,24 @@ public class PaintMeshDeformer : MonoBehaviour {
 	}
 
 	void ApplyMeshCollider(){
-			if (unappliedMesh && unappliedMesh.GetComponent<MeshFilter> ()) {
-					unappliedMesh.GetComponent<MeshFilter> ().mesh = unappliedMesh.mesh;		
+		if (unappliedMesh && unappliedMesh.GetComponent<MeshFilter> ()) {
+			unappliedMesh.GetComponent<MeshFilter> ().mesh = unappliedMesh.mesh;		
 		}
 		unappliedMesh = null;
 	}
+
+    public void ApplyGaussPaint(float dista, float inRadius)
+    {
+        _fallOff = GaussFallOff(dista, inRadius);
+    }
+    public void ApplyLinearPaint(float dista, float inRadius)
+    {
+        _fallOff = LinearFallOff(dista, inRadius);
+    }
+    public void ApplyNeedlePaint(float dista, float inRadius)
+    {
+        _fallOff = NeedleFalloff(dista, inRadius);
+    }
 
 
 }
