@@ -90,6 +90,8 @@
     <Compile Include="Assets\Script\MeshDeformer.cs" />
     <Compile Include="Assets\Script\MeshDeformerInput.cs" />
     <Compile Include="Assets\Script\Noise.cs" />
+    <Compile Include="Assets\Script\OBJ_exporter\EditorObjExporter.cs" />
+    <Compile Include="Assets\Script\OBJ_exporter\ObjExporter.cs" />
     <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
     <Compile Include="Assets\Script\RemoveMeshDeformer.cs" />
     <Compile Include="Assets\Script\RoundedCube.cs" />
