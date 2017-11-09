@@ -95,6 +95,7 @@
     <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
     <Compile Include="Assets\Script\RemoveMeshDeformer.cs" />
     <Compile Include="Assets\Script\RoundedCube.cs" />
+    <Compile Include="Assets\Sources\~ControlScripts\Orbit.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Rounded Cube Grid.shader" />
