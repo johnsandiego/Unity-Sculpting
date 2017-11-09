@@ -19,6 +19,10 @@ public class PaintMeshDeformer : MonoBehaviour {
 
 
 
+    public GameObject[] SculptTools;
+
+
+
 	public enum FallOff{
 		Gauss, 
 		Linear, 
@@ -41,20 +45,23 @@ public class PaintMeshDeformer : MonoBehaviour {
 		RaycastHit hit;
 		Ray ray = Camera.main.ScreenPointToRay (Input.mousePosition);
 		if(Physics.Raycast(ray, out hit)){
-			MeshFilter filter = hit.collider.GetComponent<MeshFilter>();
-			if(filter){
-				if(filter != unappliedMesh){
-					ApplyMeshCollider();
-					unappliedMesh = filter;
+			if (hit.transform.gameObject.tag != "Non-Modifiable") {
+				MeshFilter filter = hit.collider.GetComponent<MeshFilter> ();
+				if (filter) {
+					if (filter != unappliedMesh) {
+						ApplyMeshCollider ();
+						unappliedMesh = filter;
+					}
+
+					Vector3 relativePoint = filter.transform.InverseTransformPoint (hit.point);
+					DeformMesh (filter.mesh, relativePoint, pull * Time.deltaTime, radius);
 
 				}
-
-				Vector3 relativePoint = filter.transform.InverseTransformPoint(hit.point);
-				DeformMesh(filter.mesh, relativePoint, pull*Time.deltaTime, radius);
-
 			}
 		}
 	}
+
+
 
 	public float LinearFallOff(float dis, float inRadius){
 		return Mathf.Clamp01 (1.0f - dis / inRadius);
@@ -69,6 +76,8 @@ public class PaintMeshDeformer : MonoBehaviour {
 
 		return -(dist*dist)/(inRadius*inRadius)+1.0f;
 	}
+
+
 
     //deforms mesh
 	public void DeformMesh(Mesh mesh, Vector3 position, float power, float inRadius){
@@ -92,6 +101,8 @@ public class PaintMeshDeformer : MonoBehaviour {
 
 		for (int j = 0; j < vertices.Length; j++) {
 			float sqrMagnitude = (vertices [j] - position).sqrMagnitude;
+
+
 
 			if (sqrMagnitude > sqrRadius)
 				continue;
@@ -130,6 +141,8 @@ public class PaintMeshDeformer : MonoBehaviour {
             vertices [j] += averageNormal * _fallOff * power;
 
 		}
+
+
 		mesh.vertices = vertices;
 		mesh.RecalculateNormals ();
 		mesh.RecalculateBounds ();
