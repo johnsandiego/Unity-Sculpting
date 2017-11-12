@@ -9,10 +9,10 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{B8650627-2C7D-A270-E3AE-7FB4C4D3B613}</ProjectGuid>
+    <ProjectGuid>{E9288CF2-C330-8135-6921-80F74756CE3E}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <AssemblyName>Assembly-CSharp</AssemblyName>
+    <AssemblyName>Assembly-UnityScript</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <BaseDirectory>Assets</BaseDirectory>
@@ -51,18 +51,20 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Script\Cube_John.cs" />
-     <Compile Include="Assets\Script\CubeSphere.cs" />
-     <Compile Include="Assets\Script\Grid.cs" />
-     <Compile Include="Assets\Script\KeyboardOrbit.cs" />
-     <Compile Include="Assets\Script\MeshDeformer.cs" />
-     <Compile Include="Assets\Script\MeshDeformerInput.cs" />
-     <Compile Include="Assets\Script\Noise.cs" />
-     <Compile Include="Assets\Script\OBJ_exporter\EditorObjExporter.cs" />
-     <Compile Include="Assets\Script\OBJ_exporter\ObjExporter.cs" />
-     <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
-     <Compile Include="Assets\Script\RemoveMeshDeformer.cs" />
-     <Compile Include="Assets\Script\RoundedCube.cs" />
+     <Compile Include="Assets\Sources\~ControlScripts\DragTransform.js" />
+     <Compile Include="Assets\Sources\~ControlScripts\KeyboardOrbit.js" />
+     <Compile Include="Assets\Sources\~ControlScripts\VPS.js" />
+     <Compile Include="Assets\Sources\CrumpleMesh.js" />
+     <Compile Include="Assets\Sources\ExtrudedMeshTrail.js" />
+     <Compile Include="Assets\Sources\FractalTexture.js" />
+     <Compile Include="Assets\Sources\HeightmapGenerator.js" />
+     <Compile Include="Assets\Sources\InitialRigidbodyVelocity.js" />
+     <Compile Include="Assets\Sources\MouseOrbit.js" />
+     <Compile Include="Assets\Sources\PaintVertices.js" />
+     <Compile Include="Assets\Sources\SinusCurveModifier.js" />
+     <Compile Include="Assets\Sources\SmoothRandomPosition.js" />
+     <Compile Include="Assets\Sources\TronTrail.js" />
+     <Compile Include="Assets\Sources\Twist.js" />
      <None Include="Assets\Rounded Cube Grid.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>D:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
