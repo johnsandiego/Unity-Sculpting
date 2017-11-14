@@ -17,11 +17,7 @@ public class PaintMeshDeformer : MonoBehaviour {
     public Dropdown AddorSubtract;
     public Slider strengthLevel;
 
-
-
     public GameObject[] SculptTools;
-
-
 
 	public enum FallOff{
 		Gauss, 
@@ -68,12 +64,10 @@ public class PaintMeshDeformer : MonoBehaviour {
 	}
 
 	public float GaussFallOff(float diss, float inRadius){
-
 		return Mathf.Clamp01(Mathf.Pow(360.0f, -Mathf.Pow(diss/inRadius,2.5f)-0.01f));
 	}
 
 	public float NeedleFalloff(float dist, float inRadius){
-
 		return -(dist*dist)/(inRadius*inRadius)+1.0f;
 	}
 
