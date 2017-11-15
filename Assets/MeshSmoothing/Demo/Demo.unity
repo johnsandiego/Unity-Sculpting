@@ -208,7 +208,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0.25
   type: 1
-  times: 10
+  times: 2
   hcAlpha: 0.7
   hcBeta: 0.16
 --- !u!23 &17921024
@@ -386,7 +386,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0.25
   type: 0
-  times: 0
+  times: 2
   hcAlpha: 0.5
   hcBeta: 0.5
 --- !u!23 &1460711496
@@ -532,6 +532,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   intensity: 0.25
   type: 0
-  times: 10
+  times: 4
   hcAlpha: 0.5
   hcBeta: 0.5

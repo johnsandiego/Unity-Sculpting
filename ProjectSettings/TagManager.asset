@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Non-Modifiable
   - Tool
+  - Mesh
   layers:
   - Default
   - TransparentFX

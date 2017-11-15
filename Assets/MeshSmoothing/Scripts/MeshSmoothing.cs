@@ -16,6 +16,8 @@ namespace mattatz.MeshSmoothingSystem {
 
 	public class MeshSmoothing {
 
+
+
 		public static Mesh LaplacianFilter (Mesh mesh, int times = 1) {
 			mesh.vertices = LaplacianFilter(mesh.vertices, mesh.triangles, times);
 			mesh.RecalculateNormals();

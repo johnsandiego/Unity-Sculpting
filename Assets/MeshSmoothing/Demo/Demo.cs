@@ -43,7 +43,12 @@ namespace mattatz.MeshSmoothingSystem.Demo {
 			}
 		}
 		
-		// void Update () {}
+		 void Update () {
+			if(Input.GetKeyDown(KeyCode.T)){
+				filter.mesh = MeshSmoothing.LaplacianFilter (filter.mesh, times);
+				return;
+			}
+		}
 
 		Mesh ApplyNormalNoise (Mesh mesh) {
 

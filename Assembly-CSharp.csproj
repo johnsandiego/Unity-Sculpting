@@ -65,6 +65,7 @@
      <Compile Include="Assets\Script\OBJ_exporter\ObjExporter.cs" />
      <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
      <Compile Include="Assets\Script\RoundedCube.cs" />
+     <Compile Include="Assets\Script\Undo.cs" />
      <None Include="Assets\Rounded Cube Grid.shader" />
  <Reference Include="UnityEngine.UI">
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
