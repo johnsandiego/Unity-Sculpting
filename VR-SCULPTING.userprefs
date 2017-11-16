@@ -5,10 +5,10 @@
       <File FileName="Assets\Script\Grid.cs" Line="1" Column="1" />
       <File FileName="Assets\Sources\ExtrudedMeshTrail.js" Line="1" Column="1" />
       <File FileName="Assets\Script\MeshDeformer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="120" Column="4" />
-      <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="49" Column="11" />
+      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="1" Column="1" />
+      <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="19" Column="3" />
-      <File FileName="Assets\Script\Undo.cs" Line="20" Column="3" />
+      <File FileName="Assets\Script\Undo.cs" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
