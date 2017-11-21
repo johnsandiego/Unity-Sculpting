@@ -54,6 +54,7 @@
      <Compile Include="Assets\MeshSmoothing\Demo\Demo.cs" />
      <Compile Include="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" />
      <Compile Include="Assets\MeshSmoothing\Scripts\VertexConnection.cs" />
+     <Compile Include="Assets\Script\CreateSphere.cs" />
      <Compile Include="Assets\Script\Cube_John.cs" />
      <Compile Include="Assets\Script\CubeSphere.cs" />
      <Compile Include="Assets\Script\Grid.cs" />
