@@ -66,6 +66,7 @@
      <Compile Include="Assets\Script\PaintMeshDeformer.cs" />
      <Compile Include="Assets\Script\RoundedCube.cs" />
      <Compile Include="Assets\Script\SavingAndLoading.cs" />
+     <Compile Include="Assets\Script\Sphere.cs" />
      <Compile Include="Assets\Script\UndoAndRedo.cs" />
      <None Include="Assets\Rounded Cube Grid.shader" />
  <Reference Include="UnityEngine.UI">
