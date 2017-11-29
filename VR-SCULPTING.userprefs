@@ -9,7 +9,7 @@
       <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\CubeSphere.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\UndoAndRedo.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\UndoAndRedo.cs" Line="59" Column="12" />
       <File FileName="Assets\Script\SavingAndLoading.cs" Line="1" Column="1" />
       <File FileName="Assets\Sources\HeightmapGenerator.js" Line="1" Column="1" />
       <File FileName="Assets\Sources\CrumpleMesh.js" Line="1" Column="1" />
