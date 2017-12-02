@@ -46,6 +46,10 @@ namespace mattatz.MeshSmoothingSystem {
 			return vertices;
 		}
 
+		public void printConnection(HashSet<int> con){
+			Debug.Log (con.ToString ());
+		}
+
 		/*
 		 * HC (Humphrey’s Classes) Smooth Algorithm - Reduces Shrinkage of Laplacian Smoother
 		 * alpha 0.0 ~ 1.0
