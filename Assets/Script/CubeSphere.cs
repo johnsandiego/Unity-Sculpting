@@ -19,9 +19,11 @@ public class CubeSphere : MonoBehaviour {
 	private void Generate () {
 		GetComponent<MeshFilter>().mesh = mesh = new Mesh();
 		mesh.name = "Procedural Sphere";
+
 		CreateVertices();
 		CreateTriangles();
 		CreateColliders();
+		//Debug.Log (mesh.vertexCount);
 	}
 
 	private void CreateVertices () {

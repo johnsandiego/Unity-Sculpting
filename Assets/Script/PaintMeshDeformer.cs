@@ -3,6 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using UnityEngine.UI;
+using System.Linq;
+
+/*
+ * JOhn San Diego
+ * Able
+ * Create afunction to recalculate normals in a set interval not everyframe. 
+ * 
+ * 
+ * 
+ */
 
 namespace sandiegoJohn.VRsculpting{
 	
@@ -12,11 +22,18 @@ namespace sandiegoJohn.VRsculpting{
 		public float pull = 2.0f;
 		public Vector3 sqrMagnitude;
 		public float distance;
+
+		public Vector3[] halfVert;
+		public Vector3[] otherHalf;
 	    //public float fallOff;
 
 	    public Dropdown PaintChooser;
 	    public Dropdown AddorSubtract;
 	    public Slider strengthLevel;
+
+		//break the blocks into two
+		Mesh SphereA;
+		Mesh SphereB;
 
 	    public GameObject[] SculptTools;
 
@@ -52,10 +69,26 @@ namespace sandiegoJohn.VRsculpting{
 
 						Vector3 relativePoint = filter.transform.InverseTransformPoint (hit.point);
 						DeformMesh (filter.mesh, relativePoint, pull * Time.deltaTime, radius);
-
+						MeshSymmetry (filter.mesh, relativePoint, pull * Time.deltaTime, radius);
 					}
 				}
 			}
+		}
+
+		void MeshSymmetry(Mesh currentMesh, Vector3 relativePoint, float pull, float radius ){
+			int vertexCount = currentMesh.vertexCount;
+			Vector3[] temp = currentMesh.vertices;
+
+			relativePoint.x = -relativePoint.x;
+			relativePoint.y = -relativePoint.y;
+			relativePoint.z = -relativePoint.z;
+
+			halfVert = temp.Take(currentMesh.vertexCount/2).ToArray();
+			otherHalf = currentMesh.vertices.Skip (currentMesh.vertexCount / 2).ToArray();
+
+
+			DeformMesh (currentMesh, relativePoint, pull * Time.deltaTime, radius);
+			Debug.Log ("relative POint: "+relativePoint);
 		}
 
 
