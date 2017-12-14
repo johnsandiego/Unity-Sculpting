@@ -57,6 +57,7 @@
      <Compile Include="Assets\Script\Cube_John.cs" />
      <Compile Include="Assets\Script\CubeSphere.cs" />
      <Compile Include="Assets\Script\DrawMesh.cs" />
+     <Compile Include="Assets\Script\GoalBasedLearning.cs" />
      <Compile Include="Assets\Script\Grid.cs" />
      <Compile Include="Assets\Script\KeyboardOrbit.cs" />
      <Compile Include="Assets\Script\MeshDeformer.cs" />
