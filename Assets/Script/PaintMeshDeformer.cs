@@ -25,11 +25,16 @@ namespace sandiegoJohn.VRsculpting{
 
 		public Vector3[] halfVert;
 		public Vector3[] otherHalf;
-	    //public float fallOff;
+		public Vector3 offset;
+		public Vector3 inverse;
+		public bool symmetryEnabled = false;
 
+	    //public float fallOff;
+		//UI chooser
 	    public Dropdown PaintChooser;
 	    public Dropdown AddorSubtract;
 	    public Slider strengthLevel;
+		public Toggle MeshSymmetry;
 
 		//break the blocks into two
 		Mesh SphereA;
@@ -67,29 +72,20 @@ namespace sandiegoJohn.VRsculpting{
 							unappliedMesh = filter;
 						}
 
+						//Mesh Symmetry. simple but it works
 						Vector3 relativePoint = filter.transform.InverseTransformPoint (hit.point);
+						Vector3 inversePoint = relativePoint;
+						inversePoint.x = -relativePoint.x;
+
 						DeformMesh (filter.mesh, relativePoint, pull * Time.deltaTime, radius);
-						MeshSymmetry (filter.mesh, relativePoint, pull * Time.deltaTime, radius);
+						if (MeshSymmetry.isOn) {
+							DeformMesh (filter.mesh, inversePoint, pull * Time.deltaTime, radius);
+						}
 					}
 				}
 			}
 		}
-
-		void MeshSymmetry(Mesh currentMesh, Vector3 relativePoint, float pull, float radius ){
-			int vertexCount = currentMesh.vertexCount;
-			Vector3[] temp = currentMesh.vertices;
-
-			relativePoint.x = -relativePoint.x;
-			relativePoint.y = -relativePoint.y;
-			relativePoint.z = -relativePoint.z;
-
-			halfVert = temp.Take(currentMesh.vertexCount/2).ToArray();
-			otherHalf = currentMesh.vertices.Skip (currentMesh.vertexCount / 2).ToArray();
-
-
-			DeformMesh (currentMesh, relativePoint, pull * Time.deltaTime, radius);
-			Debug.Log ("relative POint: "+relativePoint);
-		}
+			
 
 
 
