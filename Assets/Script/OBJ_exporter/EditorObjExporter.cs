@@ -25,11 +25,13 @@ struct ObjMaterial
     public string textureName;
 }
 
-public class EditorObjExporter : ScriptableObject
+public class EditorObjExporter : MonoBehaviour
 {
     private static int vertexOffset = 0;
     private static int normalOffset = 0;
     private static int uvOffset = 0;
+
+
 
 
     //User should probably be able to change this. It is currently left as an excercise for
@@ -222,12 +224,12 @@ public class EditorObjExporter : ScriptableObject
     }
 
     [MenuItem("Custom/Export/Export all MeshFilters in selection to separate OBJs")]
-    static void ExportSelectionToSeparate()
+    public static void ExportSelectionToSeparate()
     {
         if (!CreateTargetFolder())
             return;
 
-        Transform[] selection = Selection.GetTransforms(SelectionMode.Editable | SelectionMode.ExcludePrefab);
+		Transform[] selection = Selection.GetTransforms(SelectionMode.Editable | SelectionMode.ExcludePrefab);
 
         if (selection.Length == 0)
         {
@@ -255,7 +257,7 @@ public class EditorObjExporter : ScriptableObject
     }
 
     [MenuItem("Custom/Export/Export whole selection to single OBJ")]
-    static void ExportWholeSelectionToSingle()
+	public static void ExportWholeSelectionToSingle()
     {
         if (!CreateTargetFolder())
             return;
@@ -312,12 +314,14 @@ public class EditorObjExporter : ScriptableObject
 
 
     [MenuItem("Custom/Export/Export each selected to single OBJ")]
-    static void ExportEachSelectionToSingle()
+	public static void ExportEachSelectionToSingle()
     {
+
+
         if (!CreateTargetFolder())
             return;
 
-        Transform[] selection = Selection.GetTransforms(SelectionMode.Editable | SelectionMode.ExcludePrefab);
+		Transform[] selection = Selection.GetTransforms(SelectionMode.Editable | SelectionMode.ExcludePrefab);
 
         if (selection.Length == 0)
         {
@@ -350,5 +354,31 @@ public class EditorObjExporter : ScriptableObject
         else
             EditorUtility.DisplayDialog("Objects not exported", "Make sure at least some of your selected objects have mesh filters!", "");
     }
+
+	public void ExportOneMesh()
+	{
+		int exportedObjects = 0;
+		Transform meshTrans = GameObject.FindGameObjectWithTag ("Mesh").transform;
+
+		if (!CreateTargetFolder())
+			return;
+
+		Transform selection = meshTrans;
+
+		Component meshfilter = selection.GetComponent(typeof(MeshFilter));
+
+		MeshFilter mf = (MeshFilter)meshfilter;
+
+		MeshToFile(mf, targetFolder, selection.name.ToString());
+
+		exportedObjects++;
+
+		if (exportedObjects > 0)
+		{
+			EditorUtility.DisplayDialog("Objects exported", "Exported " + exportedObjects + " objects", "");
+		}
+		else
+			EditorUtility.DisplayDialog("Objects not exported", "Make sure at least some of your selected objects have mesh filters!", "");
+	}
 
 }

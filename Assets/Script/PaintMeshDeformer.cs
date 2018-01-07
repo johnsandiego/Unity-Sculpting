@@ -34,6 +34,7 @@ namespace sandiegoJohn.VRsculpting{
 	    public Dropdown PaintChooser;
 	    public Dropdown AddorSubtract;
 	    public Slider strengthLevel;
+		public Slider radiusLevel;
 		public Toggle MeshSymmetry;
 
 		//break the blocks into two
@@ -151,11 +152,13 @@ namespace sandiegoJohn.VRsculpting{
 				}
 	            switch (AddorSubtract.value)
 	            {
-	                case 0:
-	                    pull = strengthLevel.value;
+					case 0:
+						pull = strengthLevel.value;
+						radius = radiusLevel.value;
 	                    break;
 	                case 1:
 	                    pull = -(strengthLevel.value);
+						radius = radiusLevel.value;
 	                    break;
 	                default:
 	                    pull = 2.0f;

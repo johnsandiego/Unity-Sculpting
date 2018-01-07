@@ -1,21 +1,18 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\CubeSphere.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\OBJ_exporter\EditorObjExporter.cs">
     <Files>
-      <File FileName="Assets\Script\Grid.cs" Line="1" Column="1" />
       <File FileName="Assets\Sources\ExtrudedMeshTrail.js" Line="1" Column="1" />
-      <File FileName="Assets\Script\MeshDeformer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\DrawMesh.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\VertexConnection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\CubeSphere.cs" Line="3" Column="3" />
-      <File FileName="Assets\Script\UndoAndRedo.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\SavingAndLoading.cs" Line="1" Column="1" />
-      <File FileName="Assets\Sources\HeightmapGenerator.js" Line="1" Column="1" />
-      <File FileName="Assets\Sources\CrumpleMesh.js" Line="1" Column="1" />
-      <File FileName="Assets\Script\Sphere.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\GoalBasedLearning.cs" Line="1" Column="1" />
+      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" Line="1" Column="1" />
+      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\OBJ_exporter\ObjExporter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\OBJ_exporter\EditorObjExporter.cs" Line="214" Column="10" />
+      <File FileName="Assets\Script\CallingExporterScript.cs" Line="6" Column="51" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
