@@ -51,6 +51,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Plugins\MeshExtrude.cs" />
      <Compile Include="Assets\Plugins\MeshExtrusion.cs" />
      <Compile Include="Assets\Plugins\Perlin.cs" />
      <None Include="Assets\Rounded Cube Grid.shader" />

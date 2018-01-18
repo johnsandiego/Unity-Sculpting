@@ -60,6 +60,7 @@
      <Compile Include="Assets\Script\DrawMesh.cs" />
      <Compile Include="Assets\Script\GoalBasedLearning.cs" />
      <Compile Include="Assets\Script\Grid.cs" />
+     <Compile Include="Assets\Script\InitialVelocity.cs" />
      <Compile Include="Assets\Script\KeyboardOrbit.cs" />
      <Compile Include="Assets\Script\MeshDeformer.cs" />
      <Compile Include="Assets\Script\MeshDeformerInput.cs" />

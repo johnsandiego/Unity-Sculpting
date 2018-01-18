@@ -1,18 +1,22 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\OBJ_exporter\EditorObjExporter.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GoalBasedLearning.cs">
     <Files>
       <File FileName="Assets\Sources\ExtrudedMeshTrail.js" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="1" Column="1" />
       <File FileName="Assets\MeshSmoothing\Scripts\VertexConnection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\GoalBasedLearning.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\GoalBasedLearning.cs" Line="39" Column="18" />
       <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" Line="1" Column="1" />
       <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" Line="1" Column="1" />
       <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" Line="1" Column="1" />
       <File FileName="Assets\Script\OBJ_exporter\ObjExporter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\OBJ_exporter\EditorObjExporter.cs" Line="214" Column="10" />
-      <File FileName="Assets\Script\CallingExporterScript.cs" Line="6" Column="51" />
+      <File FileName="Assets\Script\OBJ_exporter\EditorObjExporter.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\CallingExporterScript.cs" Line="1" Column="1" />
+      <File FileName="Assets\Plugins\MeshExtrude.cs" Line="1" Column="1" />
+      <File FileName="Assets\Script\InitialVelocity.cs" Line="1" Column="1" />
+      <File FileName="Assets\Sources\InitialRigidbodyVelocity.js" Line="3" Column="68" />
+      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="65" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
