@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Extrusion.unity
+- path: Assets/Scenes/MeshPaintTest.unity
   isLoaded: 1
   isActive: 1
