@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/MeshPaintTest.unity
+- path: Assets/VRSculpting/Scenes/Main.unity
   isLoaded: 1
   isActive: 1

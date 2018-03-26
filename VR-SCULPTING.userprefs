@@ -1,22 +1,34 @@
 ﻿<Properties StartupItem="Assembly-CSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="Unity.Instance.Unity Editor" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Script\GoalBasedLearning.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\VRSculpting\Script\GoalBasedLearning.cs">
     <Files>
-      <File FileName="Assets\Sources\ExtrudedMeshTrail.js" Line="1" Column="1" />
-      <File FileName="Assets\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
-      <File FileName="Assets\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="1" Column="1" />
-      <File FileName="Assets\MeshSmoothing\Scripts\VertexConnection.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\GoalBasedLearning.cs" Line="39" Column="18" />
-      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" Line="1" Column="1" />
-      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" Line="1" Column="1" />
-      <File FileName="Assets\TexturePainter ( Place Me Out of Resources)\Scripts\ModelViewControls.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\OBJ_exporter\ObjExporter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\OBJ_exporter\EditorObjExporter.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\CallingExporterScript.cs" Line="1" Column="1" />
-      <File FileName="Assets\Plugins\MeshExtrude.cs" Line="1" Column="1" />
-      <File FileName="Assets\Script\InitialVelocity.cs" Line="1" Column="1" />
-      <File FileName="Assets\Sources\InitialRigidbodyVelocity.js" Line="3" Column="68" />
-      <File FileName="Assets\Script\PaintMeshDeformer.cs" Line="65" Column="4" />
+      <File FileName="Assets\VRSculpting\Script\Sphere.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\MeshSmoothing\Demo\Demo.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\AverageVertexMesh.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\MeshSmoothing\Scripts\MeshSmoothing.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\PaintMeshDeformer.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\MeshSmoothing\Scripts\VertexConnection.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Sources\PaintVertices.js" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\CubeSphere.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\Rotate.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\TrackballCamera.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\ObjectRotator.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\MenuPivot.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Shaders\Rounded Cube Grid.shader" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\TexturePainter ( Place Me Out of Resources)\Scripts\GUIManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\TexturePainter ( Place Me Out of Resources)\Scripts\TexturePainter.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\SavingToFile.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\OBJ_exporter\EditorObjExporter.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\OBJ_exporter\ObjExporter.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\SavingAndLoading.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\MenuTest.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\SaveMesh.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\LoadMesh.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\ReadMesh.js" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\MeshSerializer.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\Save.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\Load.cs" Line="1" Column="1" />
+      <File FileName="Assets\VRSculpting\Script\GoalBasedLearning.cs" Line="73" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

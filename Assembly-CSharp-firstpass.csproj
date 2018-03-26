@@ -54,7 +54,7 @@
      <Compile Include="Assets\Plugins\MeshExtrude.cs" />
      <Compile Include="Assets\Plugins\MeshExtrusion.cs" />
      <Compile Include="Assets\Plugins\Perlin.cs" />
-     <None Include="Assets\Rounded Cube Grid.shader" />
+     <None Include="Assets\Shaders\Rounded Cube Grid.shader" />
      <None Include="Assets\TexturePainter ( Place Me Out of Resources)\ReadMe.txt" />
      <None Include="Assets\TexturePainter ( Place Me Out of Resources)\ColorSelector\Shaders\ColorSelector.shader" />
  <Reference Include="UnityEngine.UI">

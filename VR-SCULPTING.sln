@@ -5,8 +5,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING", "Assembly-CS
 EndProject
 Project("{E7840BED-7BD0-F448-9B2F-4A05DB7294B7}") = "VR-SCULPTING", "Assembly-UnityScript.unityproj", "{E9288CF2-C330-8135-6921-80F74756CE3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VR-SCULPTING", "Assembly-CSharp-firstpass.csproj", "{D95E2169-F3D9-61B8-B537-B54F3099E88F}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,10 +19,6 @@ Global
 		{E9288CF2-C330-8135-6921-80F74756CE3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E9288CF2-C330-8135-6921-80F74756CE3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E9288CF2-C330-8135-6921-80F74756CE3E}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D95E2169-F3D9-61B8-B537-B54F3099E88F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
