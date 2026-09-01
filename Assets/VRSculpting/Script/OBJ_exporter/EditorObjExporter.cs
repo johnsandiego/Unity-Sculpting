@@ -10,6 +10,7 @@ N.B. there may be a bug so if the custom option doesn't come up refer to this th
 Updated for Unity 5.3
 */
 
+#if UNITY_EDITOR
 using UnityEngine;
 using UnityEditor;
 using UnityEditor.SceneManagement;
@@ -382,3 +383,4 @@ public class EditorObjExporter : MonoBehaviour
 	}
 
 }
+#endif
